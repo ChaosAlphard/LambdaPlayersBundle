@@ -522,7 +522,7 @@ end
 
 
 properties.Add("Music Tracks", {
-    MenuLabel = "Music Tracks",
+    MenuLabel = "选择音乐",
     Order = 500,
     MenuIcon = "icon16/cd.png",
 
@@ -595,7 +595,7 @@ properties.Add("Music Tracks", {
 
 
 properties.Add( "Enable Loop", {
-    MenuLabel = "Enable Loop",
+    MenuLabel = "启用循环",
     Order = 498,
     MenuIcon = "icon16/arrow_rotate_anticlockwise.png",
 
@@ -629,7 +629,7 @@ properties.Add( "Enable Loop", {
 })
 
 properties.Add( "Disable Loop", {
-    MenuLabel = "Disable Loop",
+    MenuLabel = "禁用循环",
     Order = 498,
     MenuIcon = "icon16/cancel.png",
 
@@ -665,7 +665,7 @@ properties.Add( "Disable Loop", {
 
 -- CLIENT SIDE MODE LOOPING --
 properties.Add( "Enable Loop Client Side", {
-    MenuLabel = "Enable Loop",
+    MenuLabel = "启用循环",
     Order = 498,
     MenuIcon = "icon16/arrow_rotate_anticlockwise.png",
 
@@ -684,7 +684,7 @@ properties.Add( "Enable Loop Client Side", {
 })
 
 properties.Add( "Disable Loop Client Side", {
-    MenuLabel = "Disable Loop",
+    MenuLabel = "禁用循环",
     Order = 498,
     MenuIcon = "icon16/cancel.png",
 
@@ -704,7 +704,7 @@ properties.Add( "Disable Loop Client Side", {
 -------------------
 
 properties.Add( "Play Next Track", {
-    MenuLabel = "播放下一首Play Next Track",
+    MenuLabel = "播放下一首",
     Order = 497,
     MenuIcon = "icon16/arrow_rotate_anticlockwise.png",
 
@@ -743,7 +743,7 @@ properties.Add( "Play Next Track", {
 
 
 properties.Add( "Restart Current Track", {
-    MenuLabel = "Restart Current Track",
+    MenuLabel = "重新播放当前音乐",
     Order = 499,
     MenuIcon = "icon16/arrow_rotate_anticlockwise.png",
 

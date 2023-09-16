@@ -6,6 +6,6 @@ DisconnectModule [已汉化]
 DupeBuildingModule
 EyeTapperTool
 FriendModule [已汉化]
-MusicDancingModule
+MusicDancingModule [已汉化]
 NextbotFearingModule
 SeatVehicleModule
