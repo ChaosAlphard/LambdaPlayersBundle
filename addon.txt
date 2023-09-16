@@ -1,0 +1,11 @@
+包含模块
+LambdaPlayersCore [已汉化]
+AdminModule [已汉化]
+ConversationModule
+DisconnectModule [已汉化]
+DupeBuildingModule
+EyeTapperTool
+FriendModule [已汉化]
+MusicDancingModule
+NextbotFearingModule
+SeatVehicleModule
