@@ -287,7 +287,17 @@ local function PlaySoundFile( ent, soundname, index, is3d )
             -- Right now this code seems to work just as I think I want it to. Unsure if it could be optimized better but to me it looks as good as it is gonna get
 
             hook.Add( "Tick", "lambdaplayersvoicetick" .. index, function()
-                if !IsValid( ent ) then if usegmodpopups:GetBool() then hook.Run( "PlayerEndVoice", ent ) end snd:Stop() return end
+                if !IsValid( ent ) then
+                    if usegmodpopups:GetBool() then
+                        hook.Run( "PlayerEndVoice", ent )
+                    end
+                    if !IsValid( snd ) then
+                        hook.Remove( "Tick", "lambdaplayersvoicetick" .. index )
+                    else
+                        snd:Stop()
+                    end
+                    return
+                end
                 if !IsValid( snd ) or snd:GetState() == GMOD_CHANNEL_STOPPED then if usegmodpopups:GetBool() then hook.Run( "PlayerEndVoice", ent ) end hook.Remove( "Tick", "lambdaplayersvoicetick" .. index ) return end
                 if RealTime() > RealTime() + length then if usegmodpopups:GetBool() then hook.Run( "PlayerEndVoice", ent ) end hook.Remove( "Tick", "lambdaplayersvoicetick" .. index ) return end
 
